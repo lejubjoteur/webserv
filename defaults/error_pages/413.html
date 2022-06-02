@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <title>413 Payload Too Large</title>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      body {
+        background-image: linear-gradient(60deg, #221e29 0%, #110f14 100%);
+        width: 100vw;
+        height: 100vh;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: rgba(255, 255, 255, 0.4);
+        font-family: "Karla", sans-serif;
+      }
+
+      .text-holder {
+        margin: 0;
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 40px;
+      }
+
+      .subtitle,
+      .info-text {
+        display: block;
+        width: 50vw;
+        line-height: normal;
+      }
+
+      .subtitle {
+        margin: 0;
+        margin-bottom: 24px;
+        height: 80;
+        font-size: 80px;
+      }
+
+      .info-text {
+        opacity: 0.5;
+        margin: 0;
+        font-size: 40px;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.4);
+        font-family: "Karla", sans-serif;
+      }
+      a {
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        transition-duration: 0.4s;
+      }
+
+      .holder {
+        margin: 0;
+        position: absolute;
+        height: 100vh;
+      }
+
+      .last-text-holder {
+        position: absolute;
+        margin: 0;
+        bottom: 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .last-text-container {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .link {
+        width: 8px;
+        height: 0px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .square {
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .rectangle {
+        padding: 0px 16px 0px 16px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .rectangle-button {
+        padding: 0px 16px 0px 16px;
+        height: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0);
+      }
+      .rectangle-button:hover {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+
+      .svg-item {
+        display: block;
+        margin: auto;
+      }
+      #sin-wave {
+        opacity: 0.4;
+        -webkit-animation: slide-right 1s linear infinite both;
+        animation: slide-right 1s linear infinite both;
+      }
+      @-webkit-keyframes slide-right {
+        0% {
+          -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+        }
+        100% {
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+      }
+      @keyframes slide-right {
+        0% {
+          -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+        }
+        100% {
+          -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div class="text-holder">
+        <h2 class="subtitle">413 Payload Too Large</h2>
+        <p class="info-text">
+          The 413 (Payload Too Large) status code indicates that the server is
+          refusing to process a request because the request payload is larger
+          than the server is willing or able to process.
+        </p>
+      </div>
+    </div>
+    <div class="last-text-holder">
+      <div class="last-text-container">
+        <div class="square">
+          <svg
+            class="svg-item"
+            width="90px"
+            height="26px"
+            viewBox="0 0 90 26"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs>
+              <clipPath id="cut-off-1">
+                <rect x="0" y="0" width="48" height="48" />
+              </clipPath>
+            </defs>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              clip-path="url(#cut-off-1)"
+            >
+              <path
+                c
+                d="M0,24.5 C12.4634419,24.5 12,1.74444444 23,1.5 C34,1.25555556 33.75,23.6264045 45,23.5 C56.25,23.3735955 56.25,1 67.5,1 C78.75,1 78.75,23.5 90,23.5"
+                id="sin-wave"
+                stroke="#F0EBF6"
+                stroke-width="2"
+                fill-rule="nonzero"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="link"></div>
+        <div class="rectangle">
+          <p>42-Webserv by</p>
+        </div>
+        <div class="link"></div>
+        <a
+          class="rectangle-button"
+          href="https://profile.intra.42.fr/users/cmeunier"
+        >
+          <p>cmeunier</p>
+        </a>
+        <div class="link"></div>
+        <a
+          class="rectangle-button"
+          href="https://profile.intra.42.fr/users/laballea"
+        >
+          <p>laballea</p>
+        </a>
+        <div class="link"></div>
+        <a
+          class="rectangle-button"
+          href="https://profile.intra.42.fr/users/qgimenez"
+        >
+          <p>qgimenez</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
